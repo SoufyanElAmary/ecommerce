@@ -1,0 +1,34 @@
+- create seeder file dans un répertoire nommé utils: nous permet de stocker tous les données existent dans (data/produits) dans la base de données monogodb atlas
+<<<<<<< HEAD
+- modifier dans le controller la focntion getProducts, pour récupérer tous les produits stockés dans la base.
+- ajouter une fonction getSingleProduct dans le controller nous permet de récupérer un produit par son ID.
+- ajouter une fonction updateProduct dans le controller nous permet de mettre à jour un produit par son ID.
+- ajouter une fonction deleteProduct dans le controller nous permet supprimer un produit par son ID.
+- creer un fichier errorHandler dans le repretoire utils, à l'intérieur de ce fichier on a crée la classe ErrorHandler qui hérite de la classe Error afin de gérer les erreurs.
+- creer un ficher Error dans le repretoire middleware, à l'intérieur de ce fichier on a crée une fonction qui définit la maniere dont on gerer les errors, puis implementant la fonction dans le controlleur.
+- l'error ne doit pas s'afficher de la meme maniere pour les users et les programmeur, donc afin de separer entre mode user(production) et development(programmer) 
+- creer un ficher catchAsyncErrors.js dans le repretoire middleware, à l'intérieur de ce fichier on a crée une fonction catchAsyncErrors  qui fait le meme role que _ try catch _.gerer les erreurs pour les fonction asynchrone  example lorsque on veut ajouter un produit si on remplit pas les champs required ,la fonction catchAsyncErrors va etre implementer pour nous indiquer qu'il faut remplir le champ
+- dans le fichier server gerons les errors qui ne sont pas gérés (unhandled rejection ) par example lien de la connection, ...
+- gerer les erreurs de type (Uncaught Exceptions )  sans appliquer try catch.
+- handle deplicate key error (email),  validation error , id error ( CastError) par example l'erreur id de produit 
+- ajoute dans le repretoire utils, cree un fichier apiFeature.js, nous permet de filtrer le nom de produit par un keyword, implemente cette dans le controller pour la fonction getProducts
+- dans le repretoire utils, dans le fichier apiFeature.js , ajoute la fonction filter dans la pour filter par cotegory ..
+- dans le repretoire utils, dans le fichier apiFeature.js , ajoute dans la fonction filter des instructions pour filtrer par prix également.
+- dans le repretoire utils, dans le fichier apiFeature.js , ajoute dans la fonction pagination pour limiter le nombre d'articles par page.
+=======
+- modifions dans le controller la focntion getProducts, pour récupérer tous les produits stockés dans la base.
+- ajoutons une fonction getSingleProduct dans le controller nous permet de récupérer un produit par son ID.
+- ajoutons une fonction updateProduct dans le controller nous permet de mettre à jour un produit par son ID.
+- ajoutons une fonction deleteProduct dans le controller nous permet supprimer un produit par son ID.
+- creons un fichier errorHandler dans le repretoire utils, à l'intérieur de ce fichier on a crée la classe ErrorHandler qui hérite de la classe Error afin de gérer les erreurs.
+- creons un ficher Error dans le repretoire middleware, à l'intérieur de ce fichier on a crée une fonction qui définit la maniere dont on gerer les errors, puis implementant la fonction dans le controlleur.
+- l'erreur ne doit pas s'afficher de la meme maniere pour les users et les programmeur, donc afin de separer entre mode user(production) et development(programmer) 
+- creons un ficher catchAsyncErrors.js dans le repretoire middleware, à l'intérieur de ce fichier on a crée une fonction catchAsyncErrors  qui fait le meme role que _ try catch _ gerons les erreurs pour les fonction asynchrone, example lorsque on veut ajouter un produit si on remplit pas les champs required ,la fonction catchAsyncErrors va etre implementer pour nous indiquer qu'il faut remplir le champ
+- dans le fichier server, ecrivons un code pour gerer les errors qui ne sont pas gérés (unhandled rejection ) par example lien de la connection, ...
+- dans le fichier server, ecrivons un code pour gerer les erreurs de type (Uncaught Exceptions )  sans appliquer try catch. 
+- cree user.js dans le model, installation packages (bcrybtjs) pour crypter password, et (jsonwebtoken), et validator pour valider les données à savoir l'émail .., (nodemailer) pour envoyer des emails,
+par example envoyer email pour réinitialiser le password. Et (body-parser) et (cookies-parser)
+- cree fichier authController
+
+>>>>>>> dad7e5a7d14cd6d0113c2cdeed0224e394536a84
+Postman nous permet de choisir entre la methode get, post... , que nous pouvons les utiliser sans les définir 

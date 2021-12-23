@@ -1,0 +1,13 @@
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const app = express();
+app.use(express.json());
+app.use(cookieParser());
+const RouterProduct = require('./routes/products');
+app.use('/api/v1',RouterProduct);
+const RouterAuth = require('./routes/auth');
+app.use('/api/v1',RouterAuth);
+const Maddleware = require('./middleware/errors');
+app.use(Maddleware);
+module.exports=app;

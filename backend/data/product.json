@@ -1,0 +1,38 @@
+ [
+	{
+		"name": "Hp Elite Book",
+	    "price" : 2000,
+	    "description" : "Notre description",
+	    "rattings" :4,
+	    "images":[{"public_id":"868uzjhgh","url":"/info/g.jpg"}],
+	    "category": "Electronics",
+	    "seller": "Amazon",
+	    "stock":30,
+	    "numOfReviews": 20,
+	    "reviews": []
+	},
+	{
+		"name": "Hp Elite Book",
+	    "price" : 2000,
+	    "description" : "Notre description",
+	    "rattings" :4,
+	    "images":[{"public_id":"868uzjhgh","url":"/info/g.jpg"}],
+	    "category": "Electronics",
+	    "seller": "Amazon",
+	    "stock":30,
+	    "numOfReviews": 20,
+	    "reviews": []
+	},
+	{
+		"name": "Hp Pro Book",
+	    "price" : 2000,
+	    "description" : "Notre description",
+	    "rattings" :4,
+	    "images":[{"public_id":"868uzjhgh","url":"/info/g.jpg"}],
+	    "category": "Electronics",
+	    "seller": "Amazon",
+	    "stock":30,
+	    "numOfReviews": 20,
+	    "reviews": []
+	}
+ ]
